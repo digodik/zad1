@@ -1,8 +1,7 @@
-import { isStrongPassword } from "./tasks/task2/task2";
+import { sumPositive, filterEven } from "./tasks/task3/task3";
 
-console.log("Password tests:");
-console.log("qwerty   →", isStrongPassword("qwerty"));
-console.log("Qwerty12 →", isStrongPassword("Qwerty12"));
-console.log("12345678 →", isStrongPassword("12345678"));
-console.log("HELLO123 →", isStrongPassword("HELLO123"));
-console.log("weakPASS1 →", isStrongPassword("weakPASS1"));
+const numbers = [3, -1, 4, 0, 10, -5];
+
+console.log("Original array:", numbers);
+console.log("Sum of positive numbers:", sumPositive(numbers));
+console.log("Even numbers:", filterEven(numbers));
