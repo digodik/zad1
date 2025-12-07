@@ -1,15 +1,15 @@
-import { parseProduct, calcTotal } from "./tasks/task6/task6";
+import { Student, getMinGrade, getMaxGrade, getAverageGrade } from "./tasks/task7/task7";
 
-
-const lines = [
-  "Milk - 42.5",
-  "Bread - 25",
-  "Cheese - 70.2",
-  "Butter - 55",
+const students: Student[] = [
+  { name: "Roman", grades: [90, 75, 88, 92] },
+  { name: "Anna", grades: [85, 95, 78, 80, 88] },
 ];
 
-const products = lines.map(parseProduct);
-console.log("Parsed products:", products);
-
-const total = calcTotal(products);
-console.log("Total price:", total);
+students.forEach(s => {
+  console.log(`Student: ${s.name}`);
+  console.log("Grades:", s.grades);
+  console.log("Min:", getMinGrade(s.grades));
+  console.log("Max:", getMaxGrade(s.grades));
+  console.log("Average:", getAverageGrade(s.grades).toFixed(2));
+  console.log("------------------------");
+});
