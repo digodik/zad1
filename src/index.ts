@@ -1,8 +1,8 @@
-import { celsiusToFahrenheit, fahrenheitToCelsius } from "./tasks/task1";
+import { isStrongPassword } from "./tasks/task2/task2";
 
-console.log("0°C =", celsiusToFahrenheit(0));
-console.log("20°C =", celsiusToFahrenheit(20));
-console.log("100°C =", celsiusToFahrenheit(100));
-
-console.log("32°F =", fahrenheitToCelsius(32));
-console.log("212°F =", fahrenheitToCelsius(212));
+console.log("Password tests:");
+console.log("qwerty   →", isStrongPassword("qwerty"));
+console.log("Qwerty12 →", isStrongPassword("Qwerty12"));
+console.log("12345678 →", isStrongPassword("12345678"));
+console.log("HELLO123 →", isStrongPassword("HELLO123"));
+console.log("weakPASS1 →", isStrongPassword("weakPASS1"));
