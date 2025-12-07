@@ -1,7 +1,13 @@
-import { sumPositive, filterEven } from "./tasks/task3/task3";
+import { addContact, findContactByName, listContacts } from "./tasks/task4/task4";
 
-const numbers = [3, -1, 4, 0, 10, -5];
 
-console.log("Original array:", numbers);
-console.log("Sum of positive numbers:", sumPositive(numbers));
-console.log("Even numbers:", filterEven(numbers));
+addContact("vaska", "+380501234567");
+addContact("Ivan", "+380987654321");
+addContact("petka", "+380631112233");
+
+
+const found = findContactByName("Ivan");
+console.log("Found contact:", found);
+
+
+listContacts();
