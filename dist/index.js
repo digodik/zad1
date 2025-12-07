@@ -1,9 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const task4_1 = require("./tasks/task4/task4");
-(0, task4_1.addContact)("vaska", "+380501234567");
-(0, task4_1.addContact)("Ivan", "+380987654321");
-(0, task4_1.addContact)("petka", "+380631112233");
-const found = (0, task4_1.findContactByName)("Ivan");
-console.log("Found contact:", found);
-(0, task4_1.listContacts)();
+const task5_1 = require("./tasks/task5/task5");
+// Примеры строк
+const sentence1 = " Hello world from TypeScript ";
+const sentence2 = "   Multiple     spaces   here  ";
+console.log("Normalized 1:", (0, task5_1.normalizeSentence)(sentence1));
+console.log("Word count 1:", (0, task5_1.countWords)(sentence1));
+console.log("Normalized 2:", (0, task5_1.normalizeSentence)(sentence2));
+console.log("Word count 2:", (0, task5_1.countWords)(sentence2));
